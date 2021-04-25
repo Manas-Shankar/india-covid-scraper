@@ -95,7 +95,7 @@ Apify.main( async ()=>{
     }
 
     await INDkvstore.setValue('LATEST',result);                
-    // await Apify.pushData(result);
+    await Apify.pushData(result);
 
     console.log("Closing puppeteer .... ");
     await browser.close();
